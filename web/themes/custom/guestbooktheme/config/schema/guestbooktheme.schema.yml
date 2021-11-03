@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the guestbooktheme theme.
+
+guestbooktheme.settings:
+  type: theme_settings
+  label: 'Guestbook settings'

@@ -1,0 +1,25 @@
+<div class="content-wrapper">
+  <div class="user-info">
+    <div class="user-ava">
+      <div class="avatar">{{ avatar }}</div>
+    </div>
+    <div class="user-variables">
+      <div class="name">{{ name }}</div>
+      <div class="email">{{ email }}</div>
+      <div class="phone_number">{{ phone_number }}</div>
+      <div class="timestamp">{{ timestamp |date('M-d-Y H:i:s') }}</div>
+    </div>
+  </div>
+  <div class="user-response">
+    <div class="response">{{ response }}</div>
+    <div class="image">{{ image }}</div>
+  </div>
+  {% if user.hasPermission('administer nodes') %}
+    <div class="btn">
+      <div class="edit"><a href="/guestbook/edit/{{ id }}" class="use-ajax edit-btn" data-dialog-type="modal"><img
+            src="/modules/custom/guestbook/images/editing.png" alt="edit" class="edit-img"></a></div>
+      <div class="delete"><a href="/guestbook/delete/{{ id }}" class="use-ajax delete-btn" data-dialog-type="modal"><img
+            src="/modules/custom/guestbook/images/delete.png" alt="delete" class="delete-img"></a></div>
+    </div>
+  {% endif %}
+</div>

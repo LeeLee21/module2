@@ -1,0 +1,22 @@
+guestbook.front:
+  path: '/guestbook'
+  defaults:
+    _controller: '\Drupal\guestbook\Controller\GuestBookController::content'
+  requirements:
+    _permission: 'access content'
+
+guestbook.delete:
+  path: '/guestbook/delete/{userid}'
+  defaults:
+    _form: '\Drupal\guestbook\Form\DeleteForm'
+    _title: 'Are U Sure?'
+  requirements:
+    _role: 'administrator'
+
+guestbook.edit:
+  path: '/guestbook/edit/{userid}'
+  defaults:
+    _form: '\Drupal\guestbook\Form\EditForm'
+    _title: 'Are U Sure?'
+  requirements:
+    _role: 'administrator'

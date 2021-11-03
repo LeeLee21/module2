@@ -1,0 +1,14 @@
+body .navbar{
+  background-color: white;
+  border: none;
+}
+body .navbar .name{
+  color: #FA8527FF;
+  font-size: 80px;
+  margin-top: 70px;
+}
+body .navbar .name:hover{
+  color: #8CC9FBFF;
+  transition: ease 0.2s;
+}
+

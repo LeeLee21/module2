@@ -1,0 +1,94 @@
+.form .guestbookform{
+  position: relative;
+}
+.form .guestbookform .form-actions{
+  margin: 40px 0 40px 0;
+}
+.form .guestbookform .name-message-status{
+  position: absolute;
+  right: 200px;
+}
+.form .guestbookform .email-message-status{
+  position: absolute;
+  right: 200px;
+  top: 55px;
+}
+.form .guestbookform .phone-message-status{
+  position: absolute;
+  right: 200px;
+  top: 104px;
+}
+.form .form-item{
+  display: flex;
+}
+.form .guestbookform {
+  display: flex;
+  flex-direction: column;
+}
+.form .form-item .control-label{
+  margin-right: 30px;
+  color: #8CC9FBFF;
+  width: 150px;
+}
+.form .form-item .input-group input {
+  width: 500px;
+  border-radius: 10px;
+}
+.form .form-item .input-group .input-group-addon{
+  display: none;
+}
+.form .form-item .form-textarea-wrapper textarea{
+  width: 500px;
+  border-radius: 10px;
+}
+.table{
+  margin: 40px 0 40px 0;
+}
+.table .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 20px 0;
+  border-bottom: 1px solid #8CC9FBFF;
+}
+.table .content-wrapper .user-info{
+  display: flex;
+  height: 150px;
+}
+.table .content-wrapper .user-info{
+  margin: auto 0;
+}
+.table .content-wrapper .user-info .user-ava{
+  margin: auto 0;
+}
+.table .content-wrapper .user-info .user-ava .avatar img{
+  margin: auto 0;
+  border-radius: 100px;
+}
+.table .content-wrapper .user-info .user-variables{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.table .content-wrapper .user-info .user-variables .name{
+  color: #FA8527FF;
+  font-weight: bold;
+}
+.table .content-wrapper .user-response{
+  display: flex;
+  align-items: center;
+  width: 800px;
+  justify-content: space-between;
+}
+.table .content-wrapper .user-response .response{
+  margin-left: 20px;
+  width: 500px;
+}
+.table .content-wrapper .user-response .image{
+  margin-right: 20px;
+}
+.table .content-wrapper .btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

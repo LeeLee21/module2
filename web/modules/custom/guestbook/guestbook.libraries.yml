@@ -1,0 +1,9 @@
+guestbook-style:
+    css:
+      theme:
+        css/style.css: {}
+
+guestbook:
+  dependencies:
+    - core/jquery
+    - core/ajax

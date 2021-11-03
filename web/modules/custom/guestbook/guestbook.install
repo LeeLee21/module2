@@ -1,0 +1,76 @@
+<?php
+
+/**
+ * @file
+ * Install, custom guest book module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function guestbook_schema()
+{
+  $schema['guestbook'] = [
+    'description' => 'GuestBook database',
+    'fields' => [
+      'id' => [
+        'description' => 'id',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'name' => [
+        'description' => 'name',
+        'type' => 'varchar',
+        'default' => '',
+        'not null' => FALSE,
+        'length' => 64,
+      ],
+      'email' => [
+        'description' => 'email',
+        'type' => 'varchar',
+        'not null' => FAlSE,
+        'default' => '',
+        'length' => 64,
+      ],
+      'phone_number' => [
+        'description' => 'phone_number',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => FALSE,
+        'default' => '',
+      ],
+      'response' => [
+        'description' => 'response',
+        'type' => 'text',
+      ],
+      'avatar' => [
+        'description' => 'avatar',
+        'length' => 64,
+        'type' => 'int',
+        'not null' => TRUE,
+      ],
+      'image' => [
+        'description' => 'user`s image',
+        'type' => 'int',
+        'not null' => FALSE,
+        'default' => 0,
+        'length' => 64,
+      ],
+      'timestamp' => [
+        'description' => 'timestamp',
+        'type' => 'varchar',
+        'not null' => FALSE,
+        'default' => '',
+        'length' => 64,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+  return $schema;
+}
+
+function guestbook_uninstall() {
+  # Remove table
+  \Drupal::state()->delete('guestbook.guestbook');
+}
